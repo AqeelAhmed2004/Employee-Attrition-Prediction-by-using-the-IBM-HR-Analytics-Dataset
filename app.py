@@ -155,3 +155,5 @@ if st.button("Predict"):#when button is clicked, it return true and code run ins
     #st.write() show text on web page, and probability converted into persontage and show 2 floating digits (:.2f) after point.
     st.write(f"Leave Probability: {probability[0][1] * 100:.2f}%")
     st.write(f"Stay Probability : {probability[0][0] * 100: .2f}%")
+    
+# for running app write this command in terminal (streamlit run app.py)
