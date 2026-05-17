@@ -9,20 +9,20 @@ import numpy as np
 model = joblib.load("employee_attrition_model.pkl")
 #Load Standard_Scalar in **scaler** object.
 scaler = joblib.load("scaler.pkl")
-#                               Streamlit library Archetecture for this project
-"""
-    st.title() --> write title on web page in large and bold.
-    st.write() --> write a text on web page.
-    st.number_input(feature, min, max) --> input box of integer with range from "min to max" and return integer.
-                                            Integer input box is used for large range.
-    st.slider(feature, min, max) --> slider with range "min to max" and return integer. Slider is used for small range.
-    st.selectbox(feature, [cat 1, Cat2]) --> create dropdown list. It return text further
-                                             we encode text into numeric format.
-    var = {cat1 : 1, cat2 : 2} --> all text (return by dropdown list) with their numerical values store in variable.
-    var[feature] --> Encode text (return by dropdown list) into respective numerical value by using variable "var".
-    st.button("button name) --> when button is clicked, it return "True".
-    """
-    
+ #                             Streamlit library Archetecture for this project
+
+#  st.title() --> write title on web page in large and bold.
+#  st.write() --> write a text on web page.
+#  st.number_input(feature, min, max) --> input box of integer with range from (min to max)sssss and return integer.
+#                                          Integer input box is used for large range.
+#  st.slider(feature, min, max) --> slider with range (min to max) and return integer. Slider is used for small range.
+#  st.selectbox(feature, [cat 1, Cat2]) --> create dropdown list. It return text further
+#                                           we encode text into numeric format.
+#  var = {cat1 : 1, cat2 : 2} --> all text (return by dropdown list) with their numerical values store in variable.
+#  var[feature] --> Encode text (return by dropdown list) into respective numerical value by using variable **var**.
+#  st.button("button name) --> when button is clicked, it return **True**.
+
+
 st.title("Employee Attrition Prediction System")
 
 st.write("Enter employee information below:")
