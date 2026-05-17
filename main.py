@@ -26,7 +26,7 @@ X_test = scaler.transform(X_test)
     Each adjustment = 1 iteration. It keeps going until either: weight stablized or limit hits.'''
 #class_weight="balanced":(we use class_weight because our dataset is highly imbalanced)
 #Class weight automatically assigns higher importance (weight) to the minority class and lower weight to the majority class.
-model = LogisticRegression(class_weight="balanced",max_iter=100) #create logistic regression classifier from sklearn
+model = LogisticRegression(class_weight="balanced",max_iter=1000) #create logistic regression classifier from sklearn
 model.fit(X_train,Y_train)   # train the model.
 """predict_proba() predict the probability of each employee and return table having 2 columns. 
     First column return is probability of class 0 and Second column is probability of class 1 (e.g
